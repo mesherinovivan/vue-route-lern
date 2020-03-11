@@ -1,15 +1,14 @@
 <template>
   <div >
-      <h1>Hello{{ id }}{{ msg }}</h1>
+      <h1>List{{ $route.params.id }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'ListView',
   props: {
-    msg: String,
-    id : String,
+    msg: String
   }
 }
 </script>
